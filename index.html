@@ -4,14 +4,24 @@
     <title>Warmi</title>
 </head>
 <body>
-    <form>
-        <label for="nombre">Datos generales:</label>
+    <form action="/formulario" method="GET"> <!--action es la ruta a la que se va a enviar el formulario y method es el método de envío-->
+        <label for="nombre">Datos generales:</label><br>
+        <label for="nombre">Nombres:</label>
         <input id="nombre" name="nombre" placeholder="Nombre">
-        <input type="text" name="apellido" placeholder="Apellido">
-        <input type= "email" id="email" placeholder="Email">
-        <input type= "password" id="password" placeholder="Password">
-        <input type= "radio" id="punto" placeholder="Punto">
-        <input type="submit" value="Enviar">
+        <br> <!--salto de linea-->
+        <label for="apellido">Apellidos:</label>
+        <input type="text" name="apellido" placeholder="Apellido"><br>
+        <!-- <label for="email">Email:</label>
+        <input type= "email" id="email" placeholder="Email"><br>
+        <label for="password">Contraseña:</label>
+        <input type= "password" id="password" placeholder="Password"><br>
+        <input type= "radio" id="punto" placeholder="Punto"><br>
+        <input type= "checkbox" id="punto" placeholder="Punto"><br>
+        <input type= "file" id="punto" placeholder="Selecciona un archivo"><br> -->
+        <label for="comentario">Comentarios</label><br> <!--label es para poner un texto en el formulario y for es para conectar el label con el input-->
+        <textarea rows="10" cols="50" id="cometario" placeholder="Escribe aquí" name="comentario"></textarea> <!--rows es la cantidad de filas y cols la cantidad de columnas-->
+        <br>
+        <input type="submit" value="Enviar"> <!--submit es para enviar el formulario-->
     </form>
     <h1>Hola warmisitas</h1>
     <h2>Hola warmisitas</h2>
