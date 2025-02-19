@@ -1,38 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Warmi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LlamaFood - Delivery Peruano</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="/formulario" method="GET"> <!--action es la ruta a la que se va a enviar el formulario y method es el método de envío-->
-        <label for="nombre">Datos generales:</label><br>
-        <label for="nombre">Nombres:</label>
-        <input id="nombre" name="nombre" placeholder="Nombre">
-        <br> <!--salto de linea-->
-        <label for="apellido">Apellidos:</label>
-        <input type="text" name="apellido" placeholder="Apellido"><br>
-        <!-- <label for="email">Email:</label>
-        <input type= "email" id="email" placeholder="Email"><br>
-        <label for="password">Contraseña:</label>
-        <input type= "password" id="password" placeholder="Password"><br>
-        <input type= "radio" id="punto" placeholder="Punto"><br>
-        <input type= "checkbox" id="punto" placeholder="Punto"><br>
-        <input type= "file" id="punto" placeholder="Selecciona un archivo"><br> -->
-        <label for="comentario">Comentarios</label><br> <!--label es para poner un texto en el formulario y for es para conectar el label con el input-->
-        <textarea rows="10" cols="50" id="cometario" placeholder="Escribe aquí" name="comentario"></textarea> <!--rows es la cantidad de filas y cols la cantidad de columnas-->
-        <br>
-        <input type="submit" value="Enviar"> <!--submit es para enviar el formulario-->
-    </form>
-    <h1>Hola warmisitas</h1>
-    <h2>Hola warmisitas</h2>
-    <h3>Hola warmisitas</h3>
-    <p>¿Cómo están Warsitas?</p>
-    <p>¿Qué el día de hoy?</p>
-    <h2>Todo bien</h2>
-    <h3>¡Por qué estas tristes?</h3>
-    <p>Porque estan muy lejos <span style="color:blueviolet"</span> chacra no produce, tu cuy no tiene crías <br><br> tu vaca no tiene leche, tu cerdo no tiene carne</p>
-    <a target="_blank" href="https://www.google.co.nz">Ir a google</a>
-    <img src="img/OP.png" height="400" width="800" /> 
-    
+    <header class="promo">
+        <h1>LlamaFood Promo</h1>
+        <h2>¿Lo quieres? ¡Lo tienes!</h2>
+        <p>Presentes en 15 ciudades del país y seguimos creciendo. 
+        Elige la app de delivery 100% peruana: <strong>Llamafood</strong></p>
+        <div class="store-buttons">
+            <button>Google Play</button>
+            <button>App Store</button>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <span class="user">Usuario: <strong>Jirón Osito</strong></span>
+        <input type="text" placeholder="Buscar...">
+        <button class="cart-button">🛒</button>
+    </nav>
+
+    <section class="categories">
+        <button class="active">Restaurante</button>
+        <button>Envíos</button>
+        <button>Supermercado</button>
+        <button>Licorería</button>
+    </section>
+
+    <section class="novedades">
+        <h3>Novedades</h3>
+        <p>Norkys Delivery</p>
+    </section>
+
+    <section class="restaurantes">
+        <h3>20 restaurantes</h3>
+        <div class="tags">
+            <button>Almuerzo</button>
+            <button>Criolla</button>
+            <button>Pollería</button>
+            <button>Postres</button>
+            <button>Alitas</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <h4>Norky's - Huánuco</h4>
+            <p>"Sabor peruano que nos une"</p>
+            <strong>S/ 10.00</strong>
+        </div>
+
+        <div class="restaurant-card">
+            <h4>Bembos - Huánuco</h4>
+            <p>La mejor hamburguesa a la parrilla...</p>
+            <strong>S/ 10.00</strong>
+        </div>
+    </section>
 </body>
 </html>
